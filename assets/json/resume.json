@@ -94,49 +94,49 @@
   ],
   "work": [
     {
-      "name": "Regis University",
-      "location": "Denver, CO, USA",
-      "position": "Assistant Professor",
-      "url": "https://www.regis.edu/",
-      "startDate": "2023-08-01",
+      "name": "Rensselaer Polytechnic Institute",
+      "location": "Troy, NY, USA",
+      "position": "Graduate Research Assistant",
+      "url": "https://www.rpi.edu",
+      "startDate": "2021-08-01",
       "endDate": "Present",
-      "summary": "Joined asd tenure-track Assistant Professor in Anderson College of Business and Computing"
+      "summary": "Conducting research to enhance Large Language Models (LLMs) and Multi-Modal Models (MMMs) using Knowledge Graphs (KGs) and Retrieval-Augmented Generation (RAG) for food computing applications."
     },
     {
-        "name": "West Virginia University",
-        "location": "Morgantown, WV, USA",
-        "position": "Postdoctoral Researcher",
-        "url": "https://www.wvu.edu/",
-        "startDate": "2023-04-01",
-        "endDate": "2024-06-01",
-        "summary": "Conducted cutting-edge research on deep-learning models for analyzing medical multimodality data and explored advancements like ChatGPT, Generative AI, and Large Language Models (LLMs)."
+        "name": "IBM Thomas J. Watson Research Center",
+        "location": "Remote",
+        "position": "Summer Extern",
+        "url": "https://research.ibm.com/labs/yorktown-heights",
+        "startDate": "2023-05",
+        "endDate": "2023-08",
+        "summary": "Investigated the impact of stable diffusion techniques on manipulating visual concepts within MMMs to produce targeted text such as stories and summaries."
       },
       {
-        "name": "C-JeS Gulliver Studio",
-        "location": "Seoul, South Korea",
-        "position": "Research Engineer",
-        "url": "http://gullivervfx.com/",
-        "startDate": "2022-03-01",
-        "endDate": "2023-03-01",
-        "summary": "Applied deep learning techniques to enhance realism for digital-human characters in Metaverse applications and innovated efficient 2D to 3D conversion methods."
+        "name": "IBM Thomas J. Watson Research Center",
+        "location": "Yotktown Heights, NY, USA",
+        "position": "Summer Extern",
+        "url": "https://research.ibm.com/labs/yorktown-heights",
+        "startDate": "2022-05",
+        "endDate": "2022-08",
+        "summary": "Improved generalizstion of visually rich document understanding model by 10-30% by modeling documents as graphs and learning their embeddings using Transformer and Graph Neural Networks (GNNs) for downstream tasks."
       },
       {
-        "name": "DeltaX",
-        "location": "Seoul, South Korea",
-        "position": "Senior Researcher",
-        "url": "http://deltax.ai/renewal/eng/",
-        "startDate": "2021-10-01",
-        "endDate": "2022-02-28",
-        "summary": "Developed advanced deep learning techniques for XVision Technology Advancement, focusing on violence detection and content moderation in videos and images."
+        "name": "IBM Thomas J. Watson Research Center",
+        "location": "Remote",
+        "position": "Summer Extern",
+        "url": "https://research.ibm.com/labs/yorktown-heights",
+        "startDate": "2021-05",
+        "endDate": "2021-08",
+        "summary": "Developed and trained transformer models and object detection models for document text understanding, focusing on classification and key-value prediction."
       },
       {
-        "name": "Sungkyunkwan University",
-        "location": "Seoul, South Korea",
-        "position": "Visiting Researcher",
-        "url": "http://mcsl.skku.edu/",
-        "startDate": "2019-09-01",
-        "endDate": "2021-09-01",
-        "summary": "Pioneered thumbnail-based video analysis for streaming platforms and collaborated on developing algorithms for multiview video surveillance summarization."
+        "name": "Lahore University of Management Sciences",
+        "location": "Lahore, Pakistan",
+        "position": "Research Associate in National Agriculture Robotics Lab",
+        "url": "https://www.lums.edu.pk",
+        "startDate": "2019-04",
+        "endDate": "2020-12",
+        "summary": "Lead team of 5-10 researchers for developing IoT solutions for water quality monitoring, and improved model compression techniques by reducing model size by 10-30 times."
       }
     
   ],
