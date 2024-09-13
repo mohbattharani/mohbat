@@ -16,11 +16,6 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "mohbattharani",
-        "url": "https://x.com/MohbatTharani"
-      },
-      {
         "network": "LinkedIn",
         "username": "mohbat-tharani",
         "url": "https://www.linkedin.com/in/mohbat-tharani/"
