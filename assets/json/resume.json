@@ -5,6 +5,7 @@
     "image": "",
     "email": "mohbattharani@gmail.com",
     "Web": "https://mohbattharani.github.io/mohbat.github.io",
+    "Research Interests": "Multimedia Models, LLMs and RAG, Computer Vision, NLP, Deep Learning",
     "summary": "",
     "location": {
       "address": "",
@@ -26,24 +27,18 @@
         }
     ]
   },
-  "interests": [
-    {
-      "name": "Research Interests",
-      "keywords": "Multimedia Models, LLMs and RAG, Computer Vision, NLP, Deep Learning" 
-      }
-  ],
   "skills": [
       {
-        "name": "Programming Languages",
-        "keywords": "Python, Java, C, C++"
+        "name": "",
+        "keywords": "Programming Languages: Python, Java, C, C++"
       },
       {
-        "name": "Libraries",
-        "keywords": "PyTorch, TensorFlow, Keras, OpenCV, Pillow, NumPy, ROS"
+        "name": "",
+        "keywords": "Libraries: PyTorch, TensorFlow, Keras, OpenCV, Pillow, NumPy, ROS"
       },
       {
-        "name": "Other Tools",
-        "keywords": "Git, LaTeX, Docker, AutoCAD, MATLAB"
+        "name": "",
+        "keywords": "Other Tools: Git, LaTeX, Docker, AutoCAD, MATLAB"
       }
   ],
   "education": [
