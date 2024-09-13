@@ -8,7 +8,7 @@ subtitle: Ph.D. Candidate
 
 profile:
   align: right
-  image: gm_prof_pic.jpg
+  image: pic_mohbat.jpg
   image_circular: false # crops the image to make it circular
   # more_info: >
   #   <p>555 your office number</p>
