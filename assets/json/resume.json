@@ -56,7 +56,7 @@
         "startDate": "2021-01",
         "endDate": "2025-05",
         "score": "",
-        "courses": ["Machine Learning from Data", "Computer Vision", "ML and Optimization"]
+        "courses": []
       },
       {
         "institution": "Lahore University of Management Sciences",
@@ -140,27 +140,14 @@
       }
     
   ],
-  "projects": [
-    {
-      "name": "Digital Human Solution for Metaverse",
-      "description": "Researched cutting-edge technologies to design realistic digital humans for the Metaverse at C-JeS Gulliver Studios.",
-      "startDate": "2022-03",
-      "endDate": "2023-03"
-    },
-    {
-      "name": "xVision, AI-Based Video Analysis Solution",
-      "description": "Designed and developed the xVision method using deep learning and computer vision techniques at DeltaX.ai.",
-      "startDate": "2021-10",
-      "endDate": "2022-02"
-    },
-    {
-      "name": "Dynamic Sports Highlights Generation",
-      "description": "Proposed a lightweight client-driven method to generate artistic media for feature-length sports videos at SKKU, Seoul South Korea.",
-      "startDate": "2019-03",
-      "endDate": "2022-09"
-    }
+  "volunteer": [
+    "Reviewer: ACM International Conference on Information and Knowledge Management (CIKM), 2024",
+    "Reviewer: ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), 2024",
+    "Reviewer: European Conference on Computer Vision (ECCV), 2024",
+    "Reviewer: IEEE Winter Conference on Applications of Computer Vision (WACV): 2020-2024",
+    "Founding member and Vice President, Computer Science Graduate Council at RPI: 2021-2022"
   ],
-  "volunteer": [],
+  
   "awards": [
     {
         "title": "Doctoral Consortium",
