@@ -87,7 +87,7 @@
         "courses": []
       }
   ],
-  "work": [
+  "Research Experience": [
     {
       "name": "Rensselaer Polytechnic Institute",
       "location": "Troy, NY, USA",
@@ -141,38 +141,7 @@
       "date":"2024"}
   ],
   
-  "awards": [
-    {
-        "title": "",
-        "date": "2021-10-01",
-        "awarder": "International Conference on Computer Vision (ICCV)",
-        "summary": ""
-      },
-      {
-        "title": "President's Award for Academic Excellence",
-        "date": "2021",
-        "awarder": "Gachon University, South Korea",
-        "summary": ""
-      },
-      {
-        "title": "Outstanding Research Award",
-        "date": "2020",
-        "awarder": "MCSL SKKU, South Korea",
-        "summary": ""
-      },
-      {
-        "title": "Travel Grant",
-        "date": "2017",
-        "awarder": "Higher Education Commission (HEC) Pakistan",
-        "summary": ""
-      },
-      {
-        "title": "Scholarship for bachelor's degree",
-        "date": "2009-2013",
-        "awarder": "Ministry of IT, Pakistan",
-        "summary": ""
-      }
-  ],
+  "awards": [],
   "certificates": [],
   "publications": [],
   
