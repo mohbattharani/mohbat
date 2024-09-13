@@ -136,28 +136,12 @@
     
   ],
   "volunteer": [
-    {
-    "title": "Reviewer: ACM International Conference on Information and Knowledge Management (CIKM)",
-    "date": "2024"
-    },
-    {
-    "title": "Reviewer: ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)",
-    "date": "2024"
-    },
-    {
-    "title": "Reviewer: European Conference on Computer Vision (ECCV)",
-    "date": "2024"
-    },
-    {
-    "title": "Reviewer: IEEE Winter Conference on Applications of Computer Vision (WACV)",
-    "date": "2020 - 2024"
-    },
-    {
-    "title": "Founding member and Vice President, Computer Science Graduate Council at RPI",
-    "date": "2021 - 2022"
-    }
+    "Reviewer: ACM International Conference on Information and Knowledge Management (CIKM), 2024",
+    "Reviewer: ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), 2024",
+    "Reviewer: European Conference on Computer Vision (ECCV), 2024",
+    "Reviewer: IEEE Winter Conference on Applications of Computer Vision (WACV): 2020-2024",
+    "Founding member and Vice President, Computer Science Graduate Council at RPI: 2021-2022"
   ],
-  
   "awards": [
     {
         "title": "Doctoral Consortium",
