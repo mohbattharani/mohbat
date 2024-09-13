@@ -4,68 +4,68 @@
     "label": "Ph.D. Candidate",
     "image": "",
     "email": "mohbattharani@gmail.com",
-    "url": "https://gmujtaba.com/",
-    "summary": "Dr. Ghulam Mujtaba is an IEEE Senior Member and a distinguished researcher in the fields of Computer Vision, Deep Learning for Visual Analysis, and Multimedia Retrieval. He has ten-plus years of industrial experience (3 years post-PhD) in research and engineering, with expertise in developing SOTA deep learning techniques for complex problems.",
+    "url": "https://mohbattharani.github.io/mohbat.github.io",
+    "summary": "",
     "location": {
-      "address": "3333 Regis Blvd",
-      "postalCode": "80221",
-      "city": "Denver",
-      "countryCode": "US",
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
       "region": ""
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "iamgmujtaba",
-        "url": "https://www.linkedin.com/in/iamgmujtaba/"
+        "username": "mohbattharani",
+        "url": "https://x.com/MohbatTharani"
       },
       {
         "network": "LinkedIn",
-        "username": "iamgmujtaba",
-        "url": "https://www.linkedin.com/in/iamgmujtaba/"
+        "username": "mohbat-tharani",
+        "url": "https://www.linkedin.com/in/mohbat-tharani/"
         }
     ]
   },
   "interests": [
     {
       "name": "Research Interests",
-      "keywords": ["Computer Vision", "Deep Learning for Visual Analysis", "Multimedia Retrieval"]
+      "keywords": ["Multimedia Models", "LLMs and RAG",  "Computer Vision", "NLP", "Deep Learning" ]
       }
   ],
   "skills": [
       {
         "name": "Programming Languages",
-        "keywords": ["Python", "Java", "C#"]
+        "keywords": ["Python", "Java", "C", "C++"]
       },
       {
         "name": "Libraries",
-        "keywords": ["PyTorch", "TensorFlow", "Keras", "OpenCV", "Pillow", "NumPy"]
+        "keywords": ["PyTorch", "TensorFlow", "Keras", "OpenCV", "Pillow", "NumPy", "ROS"]
       },
       {
         "name": "Other Tools",
-        "keywords": ["Git", "LaTeX", "Linux", "Unity3D"]
+        "keywords": ["Git", "LaTeX", "Docker", "AutoCAD", "MATLAB"]
       }
   ],
   "education": [
     {
-        "institution": "Gachon University",
-        "location": "Seongnam, South Korea",
-        "url": "https://www.gachon.ac.kr/sites/eng/",
-        "area": "Engineering",
+        "institution": "Rensselaer Polytechnic Institute",
+        "location": "Troy, NY, USA",
+        "url": "https://www.rpi.edu",
+        "area": "Computer Science",
         "studyType": "Doctor of Philosophy",
-        "startDate": "2018-03",
-        "endDate": "2021-08",
+        "startDate": "2021-01",
+        "endDate": "2025-05",
         "score": "",
-        "courses": ["Lightweight Client-driven Personalized Multimedia Framework for Next Generation Streaming Platforms"]
+        "courses": ["Machine Learning from Data", "Computer Vision", "ML and Optimization"]
       },
       {
-        "institution": "Indus University",
-        "location": "Karachi, Pakistan",
-        "url": "https://www.indus.edu.pk/",
-        "area": "Computer Science",
+        "institution": "Lahore University of Management Sciences",
+        "location": "Lahore, Pakistan",
+        "url": "https://lums.edu.pk",
+        "area": "Electrical Engineering",
         "studyType": "Master of Science",
-        "startDate": "2014-07",
-        "endDate": "2016-06",
+        "startDate": "2016-08",
+        "endDate": "2018-06",
         "score": "",
         "courses": []
       },
@@ -76,7 +76,18 @@
         "area": "Computer Science",
         "studyType": "Bachelor of Science",
         "startDate": "2009-09",
-        "endDate": "2013-07",
+        "endDate": "2014-07",
+        "score": "",
+        "courses": []
+      },
+      {
+        "institution": "Ivy Tech Community College",
+        "location": "FortWayne, IN, USA",
+        "url": "https://www.ivytech.edu/locations/fort-wayne/",
+        "area": "Engineering",
+        "studyType": "Undergraduate Exchange",
+        "startDate": "2012-08",
+        "endDate": "2013-05",
         "score": "",
         "courses": []
       }
