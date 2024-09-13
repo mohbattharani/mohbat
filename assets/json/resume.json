@@ -1,10 +1,10 @@
 {
   "basics": {
     "name": "Fnu Mohbat",
-    "label": "Ph.D. Candidate",
+    "": "Ph.D. Candidate",
     "image": "",
     "email": "mohbattharani@gmail.com",
-    "url": "https://mohbattharani.github.io/mohbat.github.io",
+    "Web": "https://mohbattharani.github.io/mohbat.github.io",
     "summary": "",
     "location": {
       "address": "",
@@ -29,21 +29,21 @@
   "interests": [
     {
       "name": "Research Interests",
-      "keywords": ["Multimedia Models", "LLMs and RAG",  "Computer Vision", "NLP", "Deep Learning" ]
+      "keywords": "Multimedia Models, LLMs and RAG, Computer Vision, NLP, Deep Learning" 
       }
   ],
   "skills": [
       {
         "name": "Programming Languages",
-        "keywords": ["Python", "Java", "C", "C++"]
+        "keywords": "Python, Java, C, C++"
       },
       {
         "name": "Libraries",
-        "keywords": ["PyTorch", "TensorFlow", "Keras", "OpenCV", "Pillow", "NumPy", "ROS"]
+        "keywords": "PyTorch, TensorFlow, Keras, OpenCV, Pillow, NumPy, ROS"
       },
       {
         "name": "Other Tools",
-        "keywords": ["Git", "LaTeX", "Docker", "AutoCAD", "MATLAB"]
+        "keywords": "Git, LaTeX, Docker, AutoCAD, MATLAB"
       }
   ],
   "education": [
@@ -113,7 +113,7 @@
       },
       {
         "name": "IBM Thomas J. Watson Research Center",
-        "location": "Yotktown Heights, NY, USA",
+        "location": "Yotktown Heights, NY",
         "position": "Summer Extern",
         "url": "https://research.ibm.com/labs/yorktown-heights",
         "startDate": "2022-05",
