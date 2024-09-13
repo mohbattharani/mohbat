@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-07-16T10:03:24-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blank</title><subtitle>Dr. Ghulam Mujtaba (Ph.D.) is IEEE Senior Member and a distinguished researcher in the field of Multimedia Retrieval, Computer Vision, and Deep Learning.
+</subtitle><entry><title type="html">AcademicJobToolkit - Streamline Your Academic Job Applications</title><link href="http://localhost:4000/blog/2024/academic-job-search-toolkit/" rel="alternate" type="text/html" title="AcademicJobToolkit - Streamline Your Academic Job Applications" /><published>2024-07-09T09:00:00-04:00</published><updated>2024-07-09T09:00:00-04:00</updated><id>http://localhost:4000/blog/2024/academic-job-search-toolkit</id><content type="html" xml:base="http://localhost:4000/blog/2024/academic-job-search-toolkit/"><![CDATA[<p>As an academic, preparing job application documents can be a time-consuming and complex process. That’s why I am excited to introduce <strong>AcademicJobToolkit</strong>, a new open-source project designed to simplify and streamline the preparation of academic job application materials.</p>
+
+<h3 id="what-is-academicjobtoolkit">What is AcademicJobToolkit?</h3>
+
+<p>AcademicJobToolkit is a Python and LaTeX-based project that assists in preparing and organizing academic job application documents. Its primary function is to simplify the process of splitting a single PDF containing multiple sections (such as Cover Letter, Research Statement, Teaching Statement, Diversity Statement, and References) into separate PDFs for each section.</p>
+
+<h3 id="key-features">Key Features</h3>
+
+<ol>
+  <li><strong>LaTeX Project Structure</strong>: The toolkit provides an organized template for compiling academic job application documents.</li>
+  <li><strong>PDF Splitting</strong>: It includes a Python script to split the compiled PDF into individual sections automatically.</li>
+  <li><strong>Customizable</strong>: Users can easily modify the LaTeX templates and Python script to fit different job application requirements.</li>
+</ol>
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/blog/jobsearch_over-480.webp 480w,/assets/img/blog/jobsearch_over-800.webp 800w,/assets/img/blog/jobsearch_over-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/blog/jobsearch_over.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+<h3 id="how-it-works">How It Works</h3>
+
+<ol>
+  <li>Users prepare their LaTeX project using the provided templates, compiling all sections into a single PDF.</li>
+  <li>The Python script then splits this PDF into individual files for each section.</li>
+  <li>The result is a set of neatly organized, separate PDFs ready for submission.</li>
+</ol>
+
+<h3 id="technical-details">Technical Details</h3>
+
+<p>The project requires Python 3.x, the PyPDF2 library, and a LaTeX distribution (Overleaf is recommended). The repository includes LaTeX templates for various application documents and a Python script for PDF splitting.</p>
+
+<h3 id="why-use-academicjobtoolkit">Why Use AcademicJobToolkit?</h3>
+
+<ol>
+  <li><strong>Time-Saving</strong>: Automates the tedious process of separating application documents.</li>
+  <li><strong>Consistency</strong>: Ensures a uniform look across all application materials.</li>
+  <li><strong>Flexibility</strong>: Easily adaptable to different application requirements.</li>
+  <li><strong>Open-Source</strong>: Free to use and open for community contributions.</li>
+</ol>
+
+<h3 id="getting-started">Getting Started</h3>
+
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+  <li>Python 3.x</li>
+  <li>PyPDF2 library</li>
+  <li>LaTeX distribution (Overleaf recommended)</li>
+</ul>
+
+<h3 id="installation">Installation</h3>
+<ul>
+  <li>Clone the repository:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/iamgmujtaba/AcademicJobToolkit.git
+<span class="nb">cd </span>AcademicJobToolkit
+</code></pre></div></div>
+<ul>
+  <li>Install the required Python packages:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>PyPDF2
+</code></pre></div></div>
+
+<p>The README of <a href="https://github.com/iamgmujtaba/AcademicJobToolkit">GitHub repository</a> provides detailed instructions on installation and usage.</p>
+
+<h3 id="usage">Usage</h3>
+<ol>
+  <li>
+    <p>Prepare your LaTeX project, which is compiled into a single PDF file containing all sections of your job application. The LaTeX project should be structured with \newpage between sections to ensure each section starts on a new page.</p>
+  </li>
+  <li>
+    <p>Save the compiled PDF in the project directory as CS_JobSearch.pdf (or any name you prefer).</p>
+  </li>
+  <li>
+    <p>Update the sections list in the Python script to match the structure of your PDF. Each section should have the name, starting page, and ending page.</p>
+  </li>
+  <li>
+    <p>Run the Python script to split the PDF into individual sections:</p>
+  </li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python split_pdf.py
+</code></pre></div></div>
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/blog/jobsearch_cmd-480.webp 480w,/assets/img/blog/jobsearch_cmd-800.webp 800w,/assets/img/blog/jobsearch_cmd-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/blog/jobsearch_cmd.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+<h3 id="directory-structure">Directory Structure</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>job-toolkit
+│
+├── main.tex
+├── resume.sty
+├── bibliography.bib
+├── sections
+│   ├── cover_letter.tex
+│   ├── research_statement.tex
+│   ├── teaching_statement.tex
+│   ├── diversity_statement.tex
+│   ├── references.tex
+└── split_pdf.py
+└── README.md
+</code></pre></div></div>
+
+<h3 id="file-descriptions">File Descriptions</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">main.tex</code>: Main LaTeX file that combines all sections</li>
+  <li><code class="language-plaintext highlighter-rouge">resume.sty</code>: Custom style file for LaTeX</li>
+  <li><code class="language-plaintext highlighter-rouge">bibliography.bib</code>: BibTeX file for references</li>
+  <li><code class="language-plaintext highlighter-rouge">split_pdf.py</code>: Python script to split the compiled PDF</li>
+</ul>
+
+<h3 id="output">Output</h3>
+<p>After running the script, your jobApp directory will contain files like:</p>
+<ul>
+  <li>Cover_Letter.pdf</li>
+  <li>Research_Statement.pdf</li>
+  <li>Teaching_Statement.pdf</li>
+  <li>Diversity_Statement.pdf</li>
+  <li>References.pdf</li>
+</ul>
+
+<h3 id="contribute">Contribute</h3>
+
+<p>As an open-source project, AcademicJobToolkit welcomes contributions from the community. Whether it’s improving the LaTeX templates, enhancing the Python script, or suggesting new features, your input is valuable.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>AcademicJobToolkit aims to make the academic job application process smoother and more efficient. By automating document preparation and organization, it allows academics to focus more on the content of their applications rather than the logistics.</p>
+
+<p>Try out AcademicJobToolkit for your next job application, and feel free to share your feedback or contributions!</p>
+
+<hr />
+
+<p><em>This project is maintained by [Your Name]. For more information, visit the <a href="https://github.com/iamgmujtaba/AcademicJobToolkit">AcademicJobToolkit GitHub repository</a>.</em></p>]]></content><author><name></name></author><category term="academic-jobs" /><category term="python" /><category term="latex" /><category term="toolkit" /><summary type="html"><![CDATA[Python and LaTeX-based project to simplify academic job application document preparation.]]></summary></entry><entry><title type="html">Configure DASH Server on Windows 10/11</title><link href="http://localhost:4000/blog/2024/configure-dash-server-windows/" rel="alternate" type="text/html" title="Configure DASH Server on Windows 10/11" /><published>2024-06-22T00:00:00-04:00</published><updated>2024-06-22T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/configure-dash-server-windows</id><content type="html" xml:base="http://localhost:4000/blog/2024/configure-dash-server-windows/"><![CDATA[<p>Dynamic Adaptive Streaming over HTTP (DASH), or MPEG-DASH, is an adaptive bitrate streaming technique. It enables high-quality streaming of media content over the Internet delivered from conventional HTTP web servers. Like Apple’s HTTP Live Streaming (HLS) solution, MPEG-DASH breaks the content into small segments served over HTTP. Each segment contains a short interval of playback time of content that is potentially many hours, such as a movie or the live broadcast of a sports event. The content is made available at a variety of different bit rates, i.e., alternative segments encoded at various bit rates covering aligned short intervals of playback time <a href="https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP">REF</a>. Now, we will move forward towards the steps followed in the process:</p>
+
+<h2 id="step-1-creation-of-the-web-server">Step 1: Creation of the Web Server</h2>
+
+<p>Microsoft provides Internet Information Services (IIS) that can be easily used as a web server. To configure, follow the straightforward steps below:</p>
+
+<ol>
+  <li>Select and open Windows features (WindowsKey+S (Search box), then type <strong>Turn Windows features on or off</strong>).</li>
+  <li>Find Internet Information Services and tick the box (wait for the process to configure and then <strong>Close</strong>).</li>
+  <li>Test it by opening Chrome and navigating to your local internet address, <strong>127.0.0.1</strong>.</li>
+  <li>The default page should appear (if not, reboot your system).</li>
+</ol>
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/blog/iis_home-480.webp 480w,/assets/img/blog/iis_home-800.webp 800w,/assets/img/blog/iis_home-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/blog/iis_home.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+<h2 id="step-2-change-default-physical-path">Step 2: Change Default Physical Path</h2>
+
+<p>You can skip this step if you don’t want to change the default path. All the files can be located at the default path <strong>C:\inetpub\wwwroot\</strong>.</p>
+
+<ol>
+  <li>Open IIS Manager (WindowsKey+S, then type IIS).</li>
+  <li>The <strong>Default Site</strong> stores its files in a particular directory. To expose this information, right-click on it, choose <strong>Manage Website</strong>, then <strong>Advanced Settings</strong>.</li>
+  <li>This will open a pop-up window with all of the default site information, such as files or document roots, as they are typically known, enabled protocols, and even bindings.</li>
+  <li>If you click on <strong>Physical Path</strong>, a button appears on its extreme right where you can choose a different document root. This is the location where your web server will look for files to serve to clients. It’s important to set this correctly to ensure your server functions as expected.</li>
+</ol>
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/blog/iis_path-480.webp 480w,/assets/img/blog/iis_path-800.webp 800w,/assets/img/blog/iis_path-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/blog/iis_path.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+<h2 id="step-3-enabling-cross-origin-resource-sharing-cors">Step 3: Enabling Cross-Origin Resource Sharing (CORS)</h2>
+
+<p>To test streams, you need to allow other websites to access files on your web server. This practical task is done by enabling cross-origin resource sharing (CORS). Follow these practical steps:</p>
+
+<ol>
+  <li>Open the webserver (WindowsKey+S then type <strong>IIS</strong>).</li>
+  <li>Select <strong>Default Web Site</strong> and right-click or double-click <strong>HTTP Response Headers</strong>.</li>
+  <li>Select <strong>Open Feature</strong> from the Action pane. Then, click <strong>Add</strong> and type in <strong>Access-Control-Allow-Origin</strong> for Name and type “*” for Value.</li>
+  <li>Click OK to add the header. To add another value, type in <strong>Access-Control-Allow-Headers</strong> for Name and type <strong>Range</strong> for Value.</li>
+</ol>
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/blog/hrs_page-480.webp 480w,/assets/img/blog/hrs_page-800.webp 800w,/assets/img/blog/hrs_page-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/blog/hrs_page.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+<h2 id="step-4-adding-the-dash-mime-type">Step 4: Adding the DASH MIME Type</h2>
+
+<p>DASH requires statements to learn how to analyze video and audio files. DASH manifest files end in <strong>.mpd</strong>. Windows IIS does not know about this extension by default. Follow these steps to add the MIME type:</p>
+
+<ol>
+  <li>Under connections, click your server and double-click <strong>MIME Types</strong>.</li>
+  <li>Type <strong>.mpd</strong> for File name extension and type <strong>application/dash+xml</strong> for MIME-type. Press OK.</li>
+  <li>Type <strong>.m4s</strong> for File name extension and type <strong>video/mp4</strong> for MIME-type. Press OK.</li>
+</ol>
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/blog/mime_dash-480.webp 480w,/assets/img/blog/mime_dash-800.webp 800w,/assets/img/blog/mime_dash-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/blog/mime_dash.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+<h2 id="step-5-ffmpeg-installation">Step 5: FFmpeg Installation</h2>
+
+<ol>
+  <li>Download FFmpeg from the readily available source <a href="https://www.ffmpeg.org/download.html#build-windows">here</a>.</li>
+  <li>Extract the downloaded FFmpeg zip file to <strong>C:\ffmpeg</strong>.</li>
+  <li>Navigate to the <strong>bin</strong> folder under <strong>C:\ffmpeg</strong> and copy the address using Ctrl+C.</li>
+  <li>Open up the System information window and click on <strong>Advanced System Settings</strong>. Then click on <strong>Environment Variables</strong>.</li>
+  <li>Select the <strong>Path</strong> variable under System variables.</li>
+  <li>Click <strong>Edit</strong> and then click <strong>New</strong>.</li>
+  <li>Type Ctrl+V to paste in the address where you extracted FFmpeg earlier. Then press OK.</li>
+</ol>
+
+<h3 id="check-installation">Check Installation</h3>
+
+<p>Open cmd and type <strong>ffmpeg</strong> in the command prompt. If you see much text in the cmd, your FFmpeg is installed successfully.</p>
+
+<h2 id="step-6-prepare-workspace">Step 6: Prepare Workspace</h2>
+
+<ol>
+  <li>Download the sample video <a href="https://download.blender.org/demo/movies/BBB/bbb_sunflower_1080p_30fps_normal.mp4">BigBuckBunny</a>.</li>
+  <li>Rename the downloaded file to <strong>input.mp4</strong>.</li>
+  <li>Run the following command in the cmd in the same directory:</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ffmpeg <span class="nt">-re</span> <span class="nt">-i</span> input.mp4 <span class="nt">-map</span> 0 <span class="nt">-map</span> 0 <span class="nt">-c</span>:a copy <span class="nt">-c</span>:v libx264 <span class="nt">-b</span>:v:0 800k <span class="nt">-b</span>:v:1 300k <span class="nt">-s</span>:v:1 320x170 <span class="nt">-profile</span>:v:1 baseline <span class="nt">-profile</span>:v:0 main <span class="nt">-bf</span> 1 <span class="nt">-keyint_min</span> 120 <span class="nt">-g</span> 120 <span class="nt">-sc_threshold</span> 0 <span class="nt">-b_strategy</span> 0 <span class="nt">-ar</span>:a:1 22050 <span class="nt">-use_timeline</span> 1 <span class="nt">-use_template</span> 1 <span class="nt">-window_size</span> 5 <span class="nt">-adaptation_sets</span> <span class="s2">"id=0,streams=v id=1,streams=a"</span> <span class="nt">-f</span> dash out.mpd
+</code></pre></div></div>
+
+<ol>
+  <li>Once the process is completed, copy all the files excluding <strong>input.mp4</strong> into the default IIS physical path (i.e C:\inetpub\wwwroot\) or the modified path.</li>
+</ol>
+
+<p>To generate segments from multiple videos, clone the repository using the following command:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/iamgmujtaba/dash-server.git
+</code></pre></div></div>
+<p>Then run the following script:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python .<span class="se">\m</span>ain.py <span class="nt">-i</span> .<span class="se">\i</span>nput<span class="se">\ </span><span class="nt">-o</span> .<span class="se">\o</span>utput<span class="se">\</span>
+</code></pre></div></div>
+
+<h2 id="step-7-final-testing">Step 7: Final Testing</h2>
+<h3 id="check-your-ip-address">Check your IP Address</h3>
+<p>Open cmd and type <strong>ipconfig</strong>. Get IPv4 Address. It would be 192.XXX.XXX.XXX.</p>
+<h3 id="play-video-on-dash-player">Play Video on DASH Player</h3>
+
+<h4 id="vlc">VLC</h4>
+<ol>
+  <li>Install <a href="https://www.videolan.org/vlc/download-windows.html">VLC</a>.</li>
+  <li>Open <strong>Network Stream</strong> by using <strong>Ctrl+N</strong>.</li>
+  <li>Type the URL like this <strong>http://192.XXX.XXX.XXX/bbb_dash/out.mpd</strong>. <strong>bbb_dash</strong> is the directory of the processed BigBuckBunny video and <strong>out.mpd</strong> is the DASH text file we created using the above script.</li>
+  <li>Finally, press play.</li>
+</ol>
+
+<p>If you can watch the video, it means you have successfully configured DASH on your Windows machine.</p>
+
+<h4 id="ubuntu-or-jetson-devices">Ubuntu or Jetson Devices</h4>
+<p>Suppose you want to utilize a native DASH web player. In that case, you can clone <a href="https://github.com/Dash-Industry-Forum/dash.js">dash.js</a> from GitHub and then follow the <a href="https://github.com/Dash-Industry-Forum/dash.js#getting-started">installation</a> instructions.</p>
+
+<p>The main code is available at <a href="https://github.com/iamgmujtaba/dash-server">GitHub</a>.</p>
+
+<p>Raise an issue if you are facing any problems.</p>]]></content><author><name></name></author><category term="Tutorial" /><category term="Streaming" /><category term="Windows" /><category term="DASH" /><category term="MPEG-DASH" /><category term="IIS" /><category term="Streaming" /><category term="FFmpeg" /><category term="Windows" /><summary type="html"><![CDATA[Learn how to configure Dynamic Adaptive Streaming over HTTP (DASH) server on Windows 10/11 using Internet Information Services (IIS) and FFmpeg.]]></summary></entry><entry><title type="html">Configure HLS Server on Windows 10/11</title><link href="http://localhost:4000/blog/2024/configure-hls-server-on-windows/" rel="alternate" type="text/html" title="Configure HLS Server on Windows 10/11" /><published>2024-06-22T00:00:00-04:00</published><updated>2024-06-22T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/configure-hls-server-on-windows</id><content type="html" xml:base="http://localhost:4000/blog/2024/configure-hls-server-on-windows/"><![CDATA[<p>HTTP Live Streaming (also known as HLS) is an HTTP-based adaptive bitrate streaming communications protocol developed by Apple Inc. and released in 2009. Support for the protocol is widespread in media players, web browsers, mobile devices, and streaming media servers. In the recent past, Adobe’s Flash video technology was the primary method of delivering video via the Internet. However, there’s been a significant shift in online video streaming. Specifically, online video delivered by protocols like HLS streaming and played by HTML5 video players has increasingly replaced Adobe’s Flash protocol. HLS resembles MPEG-DASH, breaking the overall stream into a sequence of small HTTP-based file downloads, each downloading one short chunk of an overall potentially unbounded transport stream. A list of available streams, encoded at different bit rates, is sent to the client using an extended M3U playlist <a href="https://en.wikipedia.org/wiki/HTTP_Live_Streaming">REF</a>. One key benefit of this protocol relates to its compatibility features. Unlike other streaming formats, HLS is compatible with various devices and firewalls. However, latency (or lag time) tends to be in the 15-30 second range with HLS live streams. Now, we will move forward towards the steps followed in the process:</p>
+
+<h2 id="step-1-creation-of-the-web-server">Step 1: Creation of the Web Server</h2>
+
+<p>Microsoft’s Internet Information Services (IIS) is a practical and widely-used web server that we’ll be using for this setup. Don’t worry, the configuration process is not as daunting as it may seem. Just follow these simple steps:</p>
+
+<ol>
+  <li>Start by selecting and opening Windows features (WindowsKey+S (Search box) then type <strong>Turn Windows features on or off</strong>).</li>
+  <li>Find Internet Information Services and Tick the box (Wait for the process to configure and then <strong>Close</strong>).</li>
+  <li>
+    <p>Test it by opening Chrome and navigating to your local internet address, <strong>127.0.0.1</strong>.</p>
+  </li>
+  <li>The default page should appear (If not, reboot your system).</li>
+</ol>
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/blog/iis_home-480.webp 480w,/assets/img/blog/iis_home-800.webp 800w,/assets/img/blog/iis_home-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/blog/iis_home.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+<h2 id="step-2-change-default-physical-path">Step 2: Change Default Physical Path</h2>
+
+<p>You can skip this step if you don’t want to change the default path. All the files can be located at the default path <strong>C:\inetpub\wwwroot\</strong></p>
+
+<p>Open IIS Manager (WindowsKey+S, then type IIS). The <strong>Default Site</strong> stores its files in a particular directory. To expose this information, right-click on it, choose <strong>Manage Website</strong>, then <strong>Advanced Settings</strong>. This will open a pop-up window with all the default site information, such as files or document roots, as they are typically known, enabled protocols, and even bindings. If you click on <strong>Physical Path</strong>, a button will appear on its extreme right where you can choose a different document root.</p>
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/blog/iis_path-480.webp 480w,/assets/img/blog/iis_path-800.webp 800w,/assets/img/blog/iis_path-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/blog/iis_path.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+<h2 id="step-3-enabling-cross-origin-resource-sharing-cors">Step 3: Enabling Cross-origin resource sharing (CORS)</h2>
+
+<p>To test streams, you must allow other websites to access files on your web server. However, not all modern browsers allow this by default due to security concerns. To allow this, you must explicitly tell the browser that you agree to a website to read data from your server. This is called cross-source resource sharing (CORS). To enable CORS to follow the below steps:</p>
+
+<ol>
+  <li>Open the webserver (WindowsKey+S then type <strong>IIS</strong>).</li>
+  <li>Select <strong>Default Web Site</strong> and Right Click or Double click <strong>HTTP Response Headers</strong>.</li>
+  <li>Select <strong>Open Feature</strong> from the Action. Then, click Add and Type in <strong>Access-Control-Allow-Origin</strong> for Name and type “*” for Value.</li>
+  <li>Click OK to add the header to add another value: type in <strong>Access-Control-Allow-Headers</strong> for Name; type in <strong>Range</strong> for Value.</li>
+</ol>
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/blog/hrs_page-480.webp 480w,/assets/img/blog/hrs_page-800.webp 800w,/assets/img/blog/hrs_page-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/blog/hrs_page.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+<h2 id="step-4-adding-the-hls-mime-type">Step 4: Adding the HLS MIME Type</h2>
+
+<p>HLS requires statements to learn how to analyze video and audio files. HLS manifest file ends in <strong>.m3u8</strong>. Windows IIS does not know about this extension. So, for IIS to correctly send the file to the player, you need to add this extension to IIS.</p>
+
+<p>Under connections click your server and double Click MIME Types</p>
+
+<ol>
+  <li>Type <strong>.m3u8</strong> for File name extension; type <strong>application/hls+xml</strong> for MIME-type</li>
+  <li>Press okay.</li>
+</ol>
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/blog/mime-480.webp 480w,/assets/img/blog/mime-800.webp 800w,/assets/img/blog/mime-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/blog/mime.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+<h2 id="step-5-ffmpeg-installation">Step 5: FFmpeg Installation</h2>
+
+<p>You can skip Step 5 and Step 6, by downloading the processed video from <a href="https://drive.google.com/drive/folders/1JS9lwJWr9pOibl9ZpOB6uAinh-PseZXG">google drive</a>. After downloading the video place it into the default IIS physical path (i.e., C:\inetpub\wwwroot) or the modified path.</p>
+
+<ol>
+  <li>Download FFmpeg from <a href="https://www.ffmpeg.org/download.html#build-windows">here</a>.</li>
+  <li>Extract the downloaded FFmpeg zip file to <strong>C:\ffmpeg</strong>.</li>
+  <li>Navigate to the <strong>bin</strong> folder under C:\ffmpeg and copy the address using Ctrl+C.</li>
+  <li>Open up the System information window and click on <strong>Advanced System Settings</strong>. Then click on <strong>Environment Variables</strong>.</li>
+  <li>Select the <strong>Path</strong> variable under System variables.</li>
+  <li>Click <strong>Edit</strong>. then click <strong>New</strong>.</li>
+  <li>Type Ctrl+V to paste in the address where you extracted FFmpeg earlier. Then press OK.</li>
+</ol>
+
+<h3 id="check-installation">Check Installation</h3>
+<p>Open cmd and type <strong>ffmpeg</strong> in the command prompt. If you see a lot of text in the cmd, your FFmpeg is installed successfully.</p>
+
+<h2 id="step-6-prepare-workspace">Step 6: Prepare Workspace</h2>
+
+<p>Use <a href="https://github.com/iamgmujtaba/vid2tc">vid2tc</a> to generate thumbnail containers and video segments from videos.</p>
+
+<p>Or</p>
+
+<ol>
+  <li>Download sample video <a href="https://download.blender.org/demo/movies/BBB/bbb_sunflower_1080p_30fps_normal.mp4">BigBuckBunny</a>.</li>
+  <li>Rename the downloaded file to <strong>input.mp4</strong></li>
+  <li>Run the following command in the cmd in the same directory.</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ffmpeg <span class="nt">-i</span> input.mp4 <span class="nt">-force_key_frames</span> <span class="s2">"expr:gte(t,n_forced*10)"</span> <span class="nt">-strict</span> <span class="nt">-2</span> <span class="nt">-c</span>:a aac <span class="nt">-c</span>:v libx264 <span class="nt">-f</span> segment <span class="nt">-segment_list_type</span> m3u8 <span class="nt">-segment_list_size</span> 0 <span class="nt">-segment_time</span> 10.0 <span class="nt">-segment_time_delta</span> 0.1 <span class="nt">-segment_list</span> out.m3u8 out%02d.ts
+</code></pre></div></div>
+
+<ol>
+  <li>Once the process is completed, copy all the files excluding <strong>input.mp4</strong> into the default IIS physical path (i.e C:\inetpub\wwwroot\) or the modified path.</li>
+</ol>
+
+<p>To generate segments from multiple videos, clone the repository using the following command:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/iamgmujtaba/hls-server.git
+</code></pre></div></div>
+<p>Then run the following script:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python .<span class="se">\m</span>ain.py <span class="nt">-i</span> .<span class="se">\i</span>nput<span class="se">\ </span><span class="nt">-o</span> .<span class="se">\o</span>utput<span class="se">\</span>
+</code></pre></div></div>
+
+<h2 id="step-7-final-testing">Step 7: Final Testing</h2>
+
+<h3 id="check-your-ip-address">Check your IP Address</h3>
+<p>Open cmd and type <strong>ipconfig</strong>. Get IPv4 Address. It would be 192.XXX.XXX.XXX.</p>
+<h3 id="play-video-on-hls-player">Play Video on HLS Player</h3>
+<h4 id="vlc">VLC</h4>
+<ol>
+  <li>Install <a href="https://www.videolan.org/vlc/download-windows.html">VLC</a>.</li>
+  <li>Open <strong>Network Stream</strong> by using <strong>Ctrl+N</strong>.</li>
+  <li>Type the URL like this <strong>http://192.XXX.XXX.XXX/bbb/out.m3u8</strong>. <strong>bbb</strong> is the directory of the processed BigBuckBunny video and <strong>out.m3u8</strong> is the HLS text file we created using the above script.</li>
+  <li>Finally, press play. If you can watch the video, it means you have configured HLS on your window machine.</li>
+</ol>
+
+<h4 id="iphoneipad-safari-web-browser">iPhone/iPad (Safari Web Browser)</h4>
+<p>If you have iPhone, open safari and type like this <strong>192.XXX.XXX.XXX/bbb/out.m3u8</strong>. <strong>bbb</strong> is the directory of the processed BigBuckBunny video and <strong>out.m3u8</strong> is the HLS text file we created using the above script. Please note the iPhone should be connected to the same WiFi network.</p>
+
+<h4 id="ubuntu-or-jetson-devices">Ubuntu or Jetson Devices</h4>
+<p>Suppose you want to use a native HLS web player. In that case, you can clone <a href="https://github.com/video-dev/hls.js/">hls.js</a> from GitHub and follow the <a href="https://github.com/video-dev/hls.js/#getting-started-with-development">installation</a> instructions.</p>
+
+<p>The main code is available at <a href="https://github.com/iamgmujtaba/hls-server">GitHub</a>.</p>
+
+<p>Raise an issue if you are facing any problems.</p>]]></content><author><name></name></author><category term="Tutorial" /><category term="Streaming" /><category term="Windows" /><category term="HLS" /><category term="Streaming" /><category term="Windows" /><category term="IIS" /><category term="FFmpeg" /><summary type="html"><![CDATA[Learn how to configure HTTP Live Streaming (HLS) server on Windows 10/11 using Internet Information Services (IIS) and FFmpeg.]]></summary></entry><entry><title type="html">Generate Thumbnail Containers from Videos like YouTube</title><link href="http://localhost:4000/blog/2024/generate-thumbnail-containers-from-videos/" rel="alternate" type="text/html" title="Generate Thumbnail Containers from Videos like YouTube" /><published>2024-06-22T00:00:00-04:00</published><updated>2024-06-22T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/generate-thumbnail-containers-from-videos</id><content type="html" xml:base="http://localhost:4000/blog/2024/generate-thumbnail-containers-from-videos/"><![CDATA[<p>This repository is a comprehensive guide on the crucial process of generating thumbnail containers from videos. In recent years, numerous methods have been developed to enhance the demanding timeline manipulation for video browsing. One of the most widely used techniques for web-based video players is the utilization of lightweight thumbnail containers. These containers allow users to swiftly navigate through the video player and get an instant preview of a lengthy video by viewing the thumbnail preview in the web player interface. Due to their ease of integration and navigation in web-based video players, many renowned video-on-demand (VoD) streaming platforms have incorporated them into their end-user video players <a href="https://arxiv.org/abs/2201.09049">REF</a>.</p>
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/blog/thumb_sample-480.webp 480w,/assets/img/blog/thumb_sample-800.webp 800w,/assets/img/blog/thumb_sample-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/blog/thumb_sample.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+<p><em>Orientation of thumbnails on a single thumbnail container image (left), and the thumbnail usage for instant preview in the client web-based YouTube video player (right).</em></p>
+
+<h3 id="installation">Installation</h3>
+
+<ol>
+  <li>Clone the repo by using the following command.
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/iamgmujtaba/vid2tc.git
+<span class="nb">cd </span>vid2tc
+</code></pre></div>    </div>
+  </li>
+  <li>Create a conda environment and install packages.
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create <span class="nt">-n</span> vid2tc <span class="nv">python</span><span class="o">=</span>3.8 <span class="nt">-y</span>
+conda activate vid2tc
+</code></pre></div>    </div>
+  </li>
+  <li>To install dependencies using pip, please type the command.
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="usage">Usage</h3>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python .<span class="se">\m</span>ain.py <span class="nt">-h</span>
+
+optional arguments:
+  <span class="nt">-h</span>, <span class="nt">--help</span>            show this <span class="nb">help </span>message and <span class="nb">exit</span>
+  <span class="nt">-i</span> INP_PATH, <span class="nt">--inp_path</span> INP_PATH   Input videos path
+  <span class="nt">-o</span> OUT_PATH, <span class="nt">--out_path</span> OUT_PATH   Output videos path
+  <span class="nt">-s</span> SEG_LEN,  <span class="nt">--seg_len</span> SEG_LEN     Segments length <span class="o">(</span>seconds<span class="o">)</span>
+  <span class="nt">-a</span> AUDIO,    <span class="nt">--audio</span> AUDIO         Extract audio <span class="o">(</span>True/False<span class="o">)</span>
+  <span class="nt">-f</span> FRAMES,   <span class="nt">--frames</span> FRAMES       Extract video frames <span class="o">(</span>True/False<span class="o">)</span>
+  <span class="nt">--thumb_width</span> THUMB_WIDTH          Width of each thumbnail
+  <span class="nt">--thumb_height</span> THUMB_HEIGHT        Height of each thumbnail
+  <span class="nt">--thumb_interval</span> THUMB_INTERVAL    Extract the first frame as thumbnails at every 1 second
+  <span class="nt">--thumb_container</span> THUMB_CONTAINER  5x5 <span class="o">(</span>row,column<span class="o">)</span> is default Thumbnail Containers
+</code></pre></div></div>
+
+<h3 id="example">Example</h3>
+<p>To generate thumbnail containers and prepare video segments, run the following script.</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python .<span class="se">\m</span>ain.py <span class="nt">-i</span> .<span class="se">\i</span>nput<span class="se">\ </span><span class="nt">-o</span> .<span class="se">\o</span>utput<span class="se">\</span>
+</code></pre></div></div>
+
+<p>The main code is available at <a href="https://github.com/iamgmujtaba/vid2tc">GitHub vid2tc</a>.</p>
+
+<h5 id="acknowledgement">Acknowledgement</h5>
+<p>The base code for this repository, which ensures its reliability, has been borrowed from <a href="https://github.com/flavioribeiro/video-thumbnail-generator">Video Thumbnail Generator</a>.</p>]]></content><author><name></name></author><category term="Tutorial" /><category term="Streaming" /><category term="YouTube" /><category term="Video" /><category term="Thumbnails" /><category term="YouTube" /><category term="Python" /><category term="FFmpeg" /><summary type="html"><![CDATA[Learn how to generate thumbnail containers from videos using Python and FFmpeg.]]></summary></entry><entry><title type="html">FFmpeg Installation on the Jetson TX2</title><link href="http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2/" rel="alternate" type="text/html" title="FFmpeg Installation on the Jetson TX2" /><published>2024-06-21T09:00:00-04:00</published><updated>2024-06-21T09:00:00-04:00</updated><id>http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2</id><content type="html" xml:base="http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2/"><![CDATA[<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/blog/ffmpeg_jetson-480.webp 480w,/assets/img/blog/ffmpeg_jetson-800.webp 800w,/assets/img/blog/ffmpeg_jetson-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/blog/ffmpeg_jetson.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+<p>While Nvidia does not officially support FFmpeg on Jetson devices (Nano, TX2), it’s worth noting that FFmpeg can leverage Jetson’s powerful hardware resources as an encoder and decoder. This unique capability makes it a compelling choice for your projects. Here’s a detailed guide to installing FFmpeg on the Jetson TX2 using JetPack SDK 4.3.</p>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<p>Since FFmpeg is built from source, we first need to install the necessary dependencies:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt build-dep ffmpeg
+</code></pre></div></div>
+
+<p>If you encounter the error E: You must put some ‘source’ URIs in your sources.list, uncomment the source lines in /etc/apt/sources.list and update the package lists:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>vi /etc/apt/sources.list
+</code></pre></div></div>
+
+<p>Uncomment the line starting with <code class="language-plaintext highlighter-rouge">deb-src</code>, save (<code class="language-plaintext highlighter-rouge">:wq</code>), and then update the repository:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt update
+<span class="nv">$ </span><span class="nb">sudo </span>apt build-dep ffmpeg
+</code></pre></div></div>
+
+<h2 id="build-dependent-libraries">Build dependent libraries</h2>
+<p>Clone the Jetson-optimized FFmpeg repository and build it:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone https://github.com/jocover/jetson-ffmpeg.git
+<span class="nv">$ </span><span class="nb">cd </span>jetson-ffmpeg
+<span class="nv">$ </span><span class="nb">mkdir </span>build
+<span class="nv">$ </span><span class="nb">cd </span>build
+<span class="nv">$ </span>cmake ..
+<span class="nv">$ </span>make
+<span class="nv">$ </span><span class="nb">sudo </span>make <span class="nb">install</span>
+<span class="nv">$ </span><span class="nb">sudo </span>ldconfig
+</code></pre></div></div>
+
+<h2 id="ffmpeg-patch-and-build">FFmpeg patch and build</h2>
+<p>Clone FFmpeg repository and apply necessary patches:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone git://source.ffmpeg.org/ffmpeg.git <span class="nt">-b</span> release/4.2 <span class="nt">--depth</span><span class="o">=</span>1
+<span class="nv">$ </span><span class="nb">cd </span>ffmpeg
+<span class="nv">$ </span>wget https://github.com/jocover/jetson-ffmpeg/raw/master/ffmpeg_nvmpi.patch
+<span class="nv">$ </span>git apply ffmpeg_nvmpi.patch
+<span class="nv">$ </span>./configure <span class="nt">--enable-nvmpi</span>
+<span class="nv">$ </span>make <span class="nt">-j4</span> 2&gt;&amp;1 | <span class="nb">tee </span>make.log
+<span class="nv">$ </span><span class="nb">sudo </span>make <span class="nb">install</span>
+</code></pre></div></div>
+
+<p>Confirm installation:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>which ffmpeg
+/usr/local/bin/ffmpeg
+<span class="nv">$ </span>ffmpeg <span class="nt">-codecs</span> | <span class="nb">grep </span>264
+</code></pre></div></div>
+<p>You should see the output confirming that <code class="language-plaintext highlighter-rouge">h264_nvmpi</code> is included in the H.264 decoder and encoder.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ffmpeg version 3eedf15 Copyright <span class="o">(</span>c<span class="o">)</span> 2000-2019 the FFmpeg developers
+  built with gcc 7 <span class="o">(</span>Ubuntu/Linaro 7.5.0-3ubuntu1~18.04<span class="o">)</span>
+  configuration: <span class="nt">--enable-nvmpi</span>
+  libavutil 56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+ DEV.LS h264                 H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 <span class="o">(</span>decoders: h264 h264_v4l2m2m h264_nvmpi <span class="o">)</span> <span class="o">(</span>encoders: h264_nvmpi h264_v4l2m2m h264_vaapi <span class="o">)</span>
+</code></pre></div></div>
+<p>Once you’ve followed these steps, you can confirm the successful installation by checking if <code class="language-plaintext highlighter-rouge">h264_nvmpi</code> is included in both the H.264 decoder and encoder. This confirmation will give you the satisfaction of a job well done.</p>
+
+<p>The first version of the blog is available <a href="https://iamgmujtaba.medium.com/ffmpegs-installation-on-the-jetson-tx2-66b5a3f21d02">here</a>.</p>]]></content><author><name></name></author><category term="Tutorial" /><category term="Streaming" /><category term="FFmpeg" /><category term="Nvidia" /><category term="FFmpeg" /><category term="Jetson TX2" /><category term="Nvidia" /><category term="Installation" /><summary type="html"><![CDATA[Step-by-step guide to install FFmpeg on Nvidia Jetson TX2.]]></summary></entry></feed>
