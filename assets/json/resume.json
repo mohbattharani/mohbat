@@ -29,16 +29,16 @@
   },
   "skills": [
       {
-        "name": "",
-        "keywords": "Programming Languages: Python, Java, C, C++"
+        "name": "Programming Languages",
+        "keywords": "Python, Java, C, C++"
       },
       {
-        "name": "",
-        "keywords": "Libraries: PyTorch, TensorFlow, Keras, OpenCV, Pillow, NumPy, ROS"
+        "name": "Libraries",
+        "keywords": "PyTorch, TensorFlow, Keras, OpenCV, Pillow, NumPy, ROS"
       },
       {
-        "name": "",
-        "keywords": "Other Tools: Git, LaTeX, Docker, AutoCAD, MATLAB"
+        "name": "Other Tools",
+        "keywords": "Git, LaTeX, Docker, AutoCAD, MATLAB"
       }
   ],
   "education": [
@@ -135,8 +135,46 @@
       }
     
   ],
-  "volunteer": [],
-  "awards": [],
+  "volunteer": [
+    "Reviewer: ACM International Conference on Information and Knowledge Management (CIKM), 2024",
+    "Reviewer: ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), 2024",
+    "Reviewer: European Conference on Computer Vision (ECCV), 2024",
+    "Reviewer: IEEE Winter Conference on Applications of Computer Vision (WACV): 2020-2024",
+    "Founding member and Vice President, Computer Science Graduate Council at RPI: 2021-2022"
+  ],
+  
+  "awards": [
+    {
+        "title": "Doctoral Consortium",
+        "date": "2021-10-01",
+        "awarder": "International Conference on Computer Vision (ICCV)",
+        "summary": ""
+      },
+      {
+        "title": "President's Award for Academic Excellence",
+        "date": "2021",
+        "awarder": "Gachon University, South Korea",
+        "summary": ""
+      },
+      {
+        "title": "Outstanding Research Award",
+        "date": "2020",
+        "awarder": "MCSL SKKU, South Korea",
+        "summary": ""
+      },
+      {
+        "title": "Travel Grant",
+        "date": "2017",
+        "awarder": "Higher Education Commission (HEC) Pakistan",
+        "summary": ""
+      },
+      {
+        "title": "Scholarship for bachelor's degree",
+        "date": "2009-2013",
+        "awarder": "Ministry of IT, Pakistan",
+        "summary": ""
+      }
+  ],
   "certificates": [],
   "publications": [],
   
