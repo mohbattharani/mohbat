@@ -2,41 +2,49 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+  <div class="post">
+    <header class="post-header">
+      {% if page.profile %}
+        <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+            {% endif %}
+            {% include figure.liquid path=profile_image_path class=profile_image_class alt=page.profile.image %}
           {% endif %}
-          {% include figure.liquid path=profile_image_path class=profile_image_class alt=page.profile.image %}
-        {% endif %}
-      </div>
-    {% endif %}
-
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
+          <!-- Social -->
+          {% if page.social %}
+            <div class="social">
+              <div class="contact-icons">{% include social.liquid %}</div>
+              <div class="contact-note">{{ site.contact_note }}</div>
+              <br>
+            </div>
+          {% endif %}
+        </div>
       {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-        <br>
-      </div>
-    {% endif %}
-  </header>
-
+  
+      <h1 class="post-title text-center">
+        {% if site.title == 'blank' %}
+          <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </h1>
+      <p class="desc float-left">{{ page.subtitle }}</p>
+    </header>
+  </div>
+  
+  <style>
+    .text-center {
+      text-align: center;
+    }
+    .float-left {
+      float: left;
+    }
+  </style>
   <article>
     <div class="clearfix">{{ content }}</div>
 
