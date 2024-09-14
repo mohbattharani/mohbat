@@ -2,10 +2,9 @@
 layout: default
 ---
 <div class="post">
-  <div class="post">
     <header class="post-header">
       {% if page.profile %}
-        <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+        <div class="profile float-left">
           {% if page.profile.image %}
             {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
             {% if page.profile.image_circular %}
@@ -33,7 +32,7 @@ layout: default
           {{ site.title }}
         {% endif %}
       </h1>
-      <p class="desc float-left">{{ page.subtitle }}</p>
+      <p class="desc float-right">{{ page.subtitle }}</p>
     </header>
   </div>
   
@@ -43,6 +42,9 @@ layout: default
     }
     .float-left {
       float: left;
+    }
+    .float-right {
+      float: right;
     }
   </style>
   <article>
