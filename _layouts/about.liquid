@@ -2,19 +2,31 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
+   <header class="post-header">
     <div class="row">
       {% if page.profile %}
         <div class="col-md-4 profile">
-          {% if page.profile.image %}
-            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-            {% if page.profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle profile-image' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded profile-image' %}
+          <div class="image-container">
+            {% if page.profile.image %}
+              {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+              {% if page.profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle profile-image' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded profile-image' %}
+              {% endif %}
+              {% include figure.liquid path=profile_image_path class=profile_image_class alt=page.profile.image %}
             {% endif %}
-            {% include figure.liquid path=profile_image_path class=profile_image_class alt=page.profile.image %}
-          {% endif %}
+            <div class="name-and-subtitle text-center">
+              <h1 class="post-title">
+                {% if site.title == 'blank' %}
+                  <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
+                {% else %}
+                  {{ site.title }}
+                {% endif %}
+              </h1>
+              <p class="subtitle">{{ page.subtitle }}</p>
+            </div>
+          </div>
           <!-- Social -->
           {% if page.social %}
             <div class="social">
@@ -27,16 +39,6 @@ layout: default
       {% endif %}
   
       <div class="col-md-8">
-        <div class="name-and-subtitle text-center">
-          <h1 class="post-title">
-            {% if site.title == 'blank' %}
-              <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
-            {% else %}
-              {{ site.title }}
-            {% endif %}
-          </h1>
-          <p class="subtitle">{{ page.subtitle }}</p>
-        </div>
         <p class="desc">{{ page.summary }}</p>
       </div>
     </div>
@@ -53,16 +55,25 @@ layout: default
     .small-icons .contact-icons {
       font-size: 0.8em; /* Reduce the size of social icons */
     }
-    .name-and-subtitle {
+    .image-container {
+      position: relative;
       display: inline-block;
+    }
+    .name-and-subtitle {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
       width: 100%;
+      color: white; /* Adjust color as needed */
+      text-shadow: 1px 1px 2px black; /* Optional: add text shadow for better readability */
     }
     .subtitle {
       margin-top: -10px; /* Adjust as needed to bring subtitle closer to the title */
     }
     .row {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
     }
     .col-md-4 {
       flex: 1;
@@ -71,7 +82,7 @@ layout: default
       flex: 2;
     }
     .desc {
-    margin-top: 20px; /* Adjust as needed */
+      margin-top: 20px; /* Adjust as needed */
     }
   </style>
   <article>
