@@ -2,51 +2,78 @@
 layout: default
 ---
 <div class="post">
-    <header class="post-header">
-      {% if page.profile %}
-        <div class="profile float-left">
-          {% if page.profile.image %}
-            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-            {% if page.profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+      <header class="post-header">
+        {% if page.profile %}
+          <div class="profile float-left">
+            {% if page.profile.image %}
+              {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+              {% if page.profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle profile-image' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded profile-image' %}
+              {% endif %}
+              {% include figure.liquid path=profile_image_path class=profile_image_class alt=page.profile.image %}
             {% endif %}
-            {% include figure.liquid path=profile_image_path class=profile_image_class alt=page.profile.image %}
-          {% endif %}
-          <!-- Social -->
-          {% if page.social %}
-            <div class="social">
-              <div class="contact-icons">{% include social.liquid %}</div>
-              <div class="contact-note">{{ site.contact_note }}</div>
-              <br>
-            </div>
-          {% endif %}
-        </div>
-      {% endif %}
-  
-      <h1 class="post-title text-center">
-        {% if site.title == 'blank' %}
-          <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
-        {% else %}
-          {{ site.title }}
+            <!-- Social -->
+            {% if page.social %}
+              <div class="social">
+                <div class="contact-icons small-icons">{% include social.liquid %}</div>
+                <div class="contact-note">{{ site.contact_note }}</div>
+                <br>
+              </div>
+            {% endif %}
+          </div>
         {% endif %}
-      </h1>
-      <p class="desc float-right">{{ page.subtitle }}</p>
-    </header>
-  </div>
-  
-  <style>
-    .text-center {
-      text-align: center;
-    }
-    .float-left {
-      float: left;
-    }
-    .float-right {
-      float: right;
-    }
-  </style>
+    
+        <h1 class="post-title text-center">
+          {% if site.title == 'blank' %}
+            <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
+          {% else %}
+            {{ site.title }}
+          {% endif %}
+        </h1>
+        <p class="desc float-right">{{ page.subtitle }}</p>
+      </header>
+    </div>
+    
+    <style>
+      .text-center {
+        text-align: center;
+      }
+      .float-left {
+        float: left;
+      }
+      .float-right {
+        float: right;
+      }
+      .profile-image {
+        width: 150px; /* Adjust the size as needed */
+        height: auto;
+      }
+      .small-icons .contact-icons {
+        font-size: 0.8em; /* Reduce the size of social icons */
+      }
+    </style>
+    
+    <article>
+      <div class="clearfix">{{ content }}</div>
+    
+      <!-- News -->
+      {% if page.news and site.announcements.enabled %}
+        <h2>
+          <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        </h2>
+        {% include news.liquid limit=true %}
+      {% endif %}
+    
+      <!-- Latest posts -->
+      {% if site.latest_posts.enabled %}
+        <h2>
+          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        </h2>
+        {% include latest_posts.liquid %}
+      {% endif %}
+    </article>
   <article>
     <div class="clearfix">{{ content }}</div>
 
