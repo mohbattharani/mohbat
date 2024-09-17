@@ -3,84 +3,40 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
-    <div class="row">
-      {% if page.profile %}
-        <div class="col-md-4 profile">
-          <div class="image-container">
-            {% if page.profile.image %}
-              {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-              {% if page.profile.image_circular %}
-                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle profile-image' %}
-              {% else %}
-                {% assign profile_image_class = 'img-fluid z-depth-1 rounded profile-image' %}
-              {% endif %}
-              {% include figure.liquid path=profile_image_path class=profile_image_class alt=page.profile.image %}
-            {% endif %}
-          </div>
-          <!-- Social -->
-          {% if page.social %}
-            <div class="social">
-              <div class="contact-icons small-icons">{% include social.liquid %}</div>
-              <div class="contact-note">{{ site.contact_note }}</div>
-              <br>
-            </div>
+    {% if page.profile %}
+      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+        {% if page.profile.image %}
+          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+          {% if page.profile.image_circular %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+          {% else %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
           {% endif %}
-        </div>
-      {% endif %}
-  
-      <div class="col-md-8">
-        <div class="name-and-subtitle text-center">
-          <h1 class="post-title">
-            {% if site.title == 'blank' %}
-              <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
-            {% else %}
-              {{ site.title }}
-            {% endif %}
-          </h1>
-          <p class="subtitle">{{ page.subtitle }}</p>
-          <p class="desc">{{ page.summary }}</p>
-        </div>
+          {% include figure.liquid path=profile_image_path class=profile_image_class alt=page.profile.image %}
+        {% endif %}
       </div>
-    </div>
+    {% endif %}
+
+    <h1 class="post-title">
+      {% if site.title == 'blank' %}
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+    <p class="desc">{{ page.subtitle }}</p>
+
+    <!-- Social -->
+    {% if page.social %}
+      <div class="social">
+        <div class="contact-icons">{% include social.liquid %}</div>
+
+        <div class="contact-note">{{ site.contact_note }}</div>
+        <br>
+      </div>
+    {% endif %}
   </header>
-  
-  <style>
-    .text-center {
-      text-align: center;
-    }
-    .profile-image {
-      width: 80px; /* Adjust the size as needed */
-      height: auto;
-    }
-    .small-icons .contact-icons {
-      font-size: 0.3em; /* Reduce the size of social icons */
-    }
-    .image-container {
-      position: relative;
-      display: inline-block;
-    }
-    .name-and-subtitle {
-      display: inline-block;
-      width: 60%;
-    }
-    .subtitle {
-      margin-top: -10px; /* Adjust as needed to bring subtitle closer to the title */
-    }
-    .row {
-      display: flex;
-      align-items: flex-start;
-    }
-    .col-md-4 {
-      flex: 1;
-    }
-    .col-md-8 {
-      flex: 2;
-    }
-    .desc {
-      margin-top: -50px; /* Adjust as needed */
-    }
-  </style>
-</div>
+
   <article>
     <div class="clearfix">{{ content }}</div>
 
@@ -132,7 +88,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Current Research</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
