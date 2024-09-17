@@ -1,8 +1,7 @@
 ---
-layout: news
-title: Paper - One paper accepted at CIKM 2024.
+title: "Paper - One paper accepted at CIKM 2024."
+date: 2023-10-01
 url: https://arxiv.org/pdf/2408.16889
-inline: true
-related_posts: true
+inline: false
+related_posts: false
 ---
-
