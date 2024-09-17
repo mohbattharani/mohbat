@@ -73,7 +73,7 @@ layout: default
       
       <!-- Render Work Section -->
       {% for data in site.data.resume %}
-        {% if data[0] == 'work' and data[1].size > 0 %}
+        {% if data[0] == 'Research Experience' and data[1].size > 0 %}
           <a class="anchor" id="{{ data[0] }}"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
