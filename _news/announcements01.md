@@ -1,8 +1,8 @@
 ---
 layout: news
 title: Paper - One paper accepted at CIKM 2024.
-subtitle: One paper "LLaVA-Chef: A Multi-modal Generative Model for Food Recipes" accepted at CIKM 2024. For details: https://arxiv.org/pdf/2408.16889
+url: https://arxiv.org/pdf/2408.16889
 inline: true
-related_posts: false
+related_posts: true
 ---
 
