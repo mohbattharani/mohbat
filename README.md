@@ -1,7 +1,3 @@
 # portfolio
-[gmujtaba.com](https://gmujtaba.com/)
+[mohbattharani.github.io](mohbattharani.github.io)
 
-
-
-##
-Based on [**al-folio**](https://github.com/alshedivat/al-folio)
