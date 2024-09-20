@@ -1,6 +1,7 @@
 ---
-title: "Announcement Title"
-date: 2023-10-01
-url: "/path/to/announcement"
+layout: post
+title: test
+subtitle: test
 inline: false
+related_posts: false
 ---
